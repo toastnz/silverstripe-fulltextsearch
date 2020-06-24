@@ -1,0 +1,40 @@
+{
+  "name": "toastnz/silverstripe-fulltextsearch",
+  "description": "Silverstripe easy install of solr search",
+  "type": "silverstripe-vendormodule",
+  "keywords": [
+    "silverstripe",
+    "fulltextsearch"
+  ],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Jaydn de Graaf",
+      "homepage": "http://pinc.nz/",
+      "role": "Developer"
+    },
+    {
+      "name": "Hadlee Lineham",
+      "homepage": "http://hadleelineham.com/",
+      "role": "Developer"
+    },
+    {
+      "name": "Emmanuel Davies",
+      "homepage": "http://toast.co.nz/",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "silverstripe/cms": "^4.3",
+    "silverstripe/framework": "^4.3",
+    "composer/installers": "*",
+    "silverstripe/fulltextsearch": "^3.6",
+    "silverstripe/tagfield": "^2.4"
+  },
+  "require-dev": {
+    "silverstripe/fulltextsearch-localsolr": "dev-master"
+  },
+  "extra": {
+    "expose": []
+  }
+}

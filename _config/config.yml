@@ -1,0 +1,28 @@
+---
+Name: toastsearch
+---
+SilverStripe\FullTextSearch\Solr\SolrIndex:
+  extensions:
+    - Toast\Extensions\SolrIndexExtension
+
+PageController:
+  extensions:
+    - Toast\Extensions\PageSearchExtension
+
+Toast\Model\ToastSolrIndex:
+  classes:
+    - SilverStripe\CMS\Model\SiteTree
+    - SilverStripe\Assets\Image
+    - SilverStripe\Assets\File
+
+Toast\Pages\SearchResults:
+  filters:
+    all:
+      - Page
+      - SilverStripe\Assets\Image
+      - SilverStripe\Assets\File
+    pages:
+      - Page
+    files:
+      - SilverStripe\Assets\Image
+      - SilverStripe\Assets\File
